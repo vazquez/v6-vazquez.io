@@ -10,6 +10,8 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
+
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre:600|Arapey:400,400i|Open+Sans:600i,700" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
@@ -22,13 +24,21 @@
 
       <div class="bg">
         <div class="container">
+          <section class="grid">
+            <article class="1/1">
+              <ul class="action-icons">
+                <li><a href="#"><i class="icon ion-email"></i></a></li>
+                <li><a href="#"><i class="icon ion-social-github"></i></a></li>
+                <li><a href="#"><i class="icon ion-social-dribbble"></i></a></li>
+                <li><a href="#"><i class="icon ion-social-twitter"></i></a></li>
+              </ul>
+            </article>
+          </section>
+        </div>
+        <div class="container">
           <section class="grid header">
             <article class="1/1 grid__cell grid__flexbox">
-              <svg class="header__image--logo" width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <!-- Generator: Sketch 40.2 (33826) - http://www.bohemiancoding.com/sketch -->
-                  <title>logo-gold</title>
-                  <desc>Created with Sketch.</desc>
-                  <defs></defs>
+              <svg class="header__image--logo" width="36px" height="36px" viewBox="0 0 36 36" version="1.1">
                   <g id="Boostrap-3-Grid" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                       <g id="logo" transform="translate(-150.000000, -115.000000)" fill="#D9CE3D">
                           <path d="M168,151 C177.941125,151 186,142.941125 186,133 C186,123.058875 177.941125,115 168,115 C158.058875,115 150,123.058875 150,133 C150,142.941125 158.058875,151 168,151 Z M166.502344,142.520313 C165.756559,141.566401 165.075823,140.434733 164.460117,139.125273 C163.844411,137.815814 163.302424,136.445671 162.834141,135.014805 C162.365857,133.583938 161.975627,132.148757 161.663437,130.709219 C161.351248,129.26968 161.125782,127.942897 160.987031,126.728828 L161.273203,126.59875 L161.273203,126.312578 C161.62008,126.13914 161.86289,126.004727 162.001641,125.909336 C162.140391,125.813945 162.244453,125.740235 162.313828,125.688203 C162.383203,125.636172 162.443906,125.592813 162.495937,125.558125 C162.547969,125.523437 162.65203,125.462735 162.808125,125.376016 L162.808125,124.881719 C163.050939,124.881719 163.276405,124.873047 163.484531,124.855703 C163.692657,124.838359 163.857421,124.829688 163.978828,124.829688 C164.117579,124.829688 164.29535,124.838359 164.512148,124.855703 C164.728946,124.873047 164.906718,124.881719 165.045469,124.881719 C165.270939,125.61016 165.513749,126.36027 165.773906,127.13207 C166.034064,127.903871 166.298553,128.666988 166.567383,129.421445 C166.836212,130.175902 167.100702,130.908668 167.360859,131.619766 C167.621017,132.330863 167.872499,132.998591 168.115312,133.622969 C168.288751,133.154685 168.47953,132.64305 168.687656,132.088047 C168.895782,131.533044 169.129921,130.995393 169.390078,130.475078 C169.650236,129.954763 169.932069,129.486486 170.235586,129.070234 C170.539103,128.653982 170.872967,128.341798 171.237187,128.133672 L171.237187,127.8475 C171.56672,127.674062 171.839882,127.513634 172.05668,127.366211 C172.273478,127.218788 172.464257,127.084376 172.629023,126.962969 C172.79379,126.841562 172.958554,126.746172 173.12332,126.676797 C173.288087,126.607422 173.500546,126.572734 173.760703,126.572734 C174.072892,126.572734 174.393748,126.607422 174.723281,126.676797 C175.052814,126.746172 175.391014,126.83289 175.737891,126.936953 L175.711875,126.936953 C176.00672,127.023672 176.223515,127.084375 176.362266,127.119063 C176.501016,127.15375 176.570391,127.214453 176.570391,127.301172 C176.570391,127.439923 176.344924,127.734763 175.893984,128.185703 C175.616483,128.515236 175.33465,128.896795 175.048477,129.330391 C174.762303,129.763987 174.489142,130.232263 174.228984,130.735234 C173.968827,131.238206 173.726017,131.762849 173.500547,132.30918 C173.275077,132.855511 173.084298,133.397497 172.928203,133.935156 C172.720077,134.646254 172.524962,135.344333 172.342852,136.029414 C172.160741,136.714496 171.978634,137.351872 171.796523,137.941563 C171.614413,138.531253 171.436641,139.034217 171.263203,139.450469 C171.089765,139.866721 170.907657,140.15289 170.716875,140.308984 L170.716875,140.803281 C170.578124,140.803281 170.448047,140.833633 170.326641,140.894336 C170.205234,140.955039 170.079493,141.033085 169.949414,141.128477 C169.819335,141.223868 169.671915,141.319257 169.507148,141.414648 C169.342382,141.51004 169.147267,141.592422 168.921797,141.661797 L168.921797,142.052031 L168.479531,142.052031 C168.410156,142.190782 168.31043,142.299179 168.180352,142.377227 C168.050273,142.455274 167.920196,142.51164 167.790117,142.546328 C167.660038,142.581016 167.542969,142.602695 167.438906,142.611367 C167.334843,142.620039 167.265469,142.624375 167.230781,142.624375 L167.308828,142.598359 C167.27414,142.615703 167.243789,142.628711 167.217773,142.637383 C167.191758,142.646055 167.135391,142.667734 167.048672,142.702422 L166.502344,142.520313 Z" id="logo-gold"></path>
@@ -55,24 +65,19 @@
         <section class="grid content">
           <article class="1/1 grid__cell content__segment">
             <h3 class="content--header">Design</h3>
-            <h1 class="content--title"><a class="content--link" href="#">
+            <h1 class="content--title"><a class="content--link" href="work/webmaker">
             Webmaker for Android</a></h1>
             <h4 class="content--subtitle">Mobile app for Mozilla</h4>
           </article>
           <article class="1/1 grid__cell content__segment">
-            <h1 class="content--title"><a class="content--link" href="#">
+            <h1 class="content--title"><a class="content--link" href="work/prox">
             Prox: A Travel Discovery App</a></h1>
             <h4 class="content--subtitle">Mobile App for Mozilla</h4>
           </article>
           <article class="1/1 grid__cell content__segment">
-            <h1 class="content--title"><a class="content--link" href="#">
+            <h1 class="content--title"><a class="content--link" href="work/freshbooks">
             FreshBooks iOS</a></h1>
             <h4 class="content--subtitle">Mobile App for FreshBooks</h4>
-          </article>
-          <article class="1/1 grid__cell content__segment">
-            <h1 class="content--title"><a class="content--link" href="#">
-            My First Year as a Mozilla Designer</a></h1>
-            <h4 class="content--subtitle">04 min read</h4>
           </article>
         </section>
       </div>

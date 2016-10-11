@@ -329,9 +329,9 @@ body {
 }
 
 .bg {
-  background-image: url("../img/background.png");
+  background-image: url("../img/background-flat.png");
   background-size: cover;
-  height: 550px;
+  height: 100vh;
   margin-bottom: 50px;
 }
 
@@ -353,7 +353,7 @@ body {
   font-family: 'Abhaya Libre', serif;
   font-weight: 600;
   color: #FFF;
-  font-size: 36px;
+  font-size: 40px;
 }
 
 .header__subheadline {
@@ -379,8 +379,76 @@ body {
   background: #0d2d53;
 }
 
+.action-icons {
+  font-size: 26px;
+  color: white;
+  list-style-type: none;
+  float: right;
+}
+
+.action-icons li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.action-icons li a {
+  position: relative;
+  top: 0;
+  padding: 0 10px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease-out;
+}
+
+.action-icons li a:before {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  display: block;
+  content: '';
+  width: 50%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.action-icons li a:hover {
+  top: -10px;
+  padding-bottom: 10px;
+}
+
+.action-icons li a:hover:before {
+  opacity: 1;
+}
+
+.back-to-main {
+  font-size: 26px;
+  color: white;
+  list-style-type: none;
+  float: left;
+}
+
+.back-to-main i {
+  padding: 0 10px 0 0;
+}
+
+.back-to-main a {
+  color: #4A90E2;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  font-style: italic;
+}
+
 .content {
   margin: 0 0 50px 0;
+}
+
+.content__cover-image {
+  max-width: 100%;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
 }
 
 .content__segment {
@@ -413,19 +481,47 @@ body {
 }
 
 .content--link:hover {
-  border-bottom: 1px solid #4A90E2;
+  border-bottom: 2px solid #4A90E2;
 }
 
 .content--subtitle {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 0.1rem;
   font-weight: 600;
   font-style: italic;
   color: #FFF;
   opacity: 0.6;
   text-transform: uppercase;
+}
+
+.content__copy {
+  font-size: 18px;
+  color: white;
+}
+
+.content__copy p {
+  font-family: 'Arapey', serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.357;
+  color: white;
+}
+
+.content__copy p a {
+  text-decoration: none;
+  color: #4A90E2;
+  transition: background 0.3s ease-in-out;
+}
+
+.content__copy p a:hover {
+  background: #0d2d53;
+}
+
+.content__gallery img {
+  max-width: 100%;
+  margin: 25px 0;
 }
 
 /* ==========================================================================
