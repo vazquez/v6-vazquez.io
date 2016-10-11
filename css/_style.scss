@@ -2,6 +2,12 @@
 // font-family: 'Open Sans', sans-serif;
 // font-family: 'Abhaya Libre', serif;
 
+// $color--action: #D9CD3D;
+
+$color--action: #4A90E2;
+
+
+
 body {
   background: #1E1F20;
 }
@@ -20,6 +26,7 @@ body {
   background-image: url("../img/background.png");
   background-size: cover;
   height: 550px;
+  margin-bottom: 50px;
 }
 .header {
   padding-top: 140px;
@@ -27,6 +34,10 @@ body {
 
 .header__image--logo {
   padding: 0 15px 0 0;
+  margin: 5px 0 0 0;
+  #logo {
+    fill: $color--action;
+  }
 }
 
 .header__headline {
@@ -52,5 +63,59 @@ body {
 
 .header__subheadline--link {
   text-decoration: none;
-  color: #D9CD3D;
+  color: $color--action;
+  transition: background 0.3s ease-in-out;
+  &:hover {
+    background: darken($color--action, 40%);
+  }
+}
+
+// Content Block
+
+.content {
+  margin: 0 0 50px 0;
+}
+
+.content__segment {
+  margin: 25px 0;
+}
+
+.content--header {
+  padding: 0 0 10px 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+  color: $color--action;
+  text-transform: uppercase;
+}
+
+.content--title {
+  margin: 0;
+  font-family: 'Arapey', serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: #FFF;
+}
+
+.content--link {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px solid rgba(255,255,255,0);
+  transition: border-bottom 0.2s ease-in-out;
+  &:hover {
+    border-bottom: 1px solid $color--action;
+  }
+}
+
+.content--subtitle {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  font-style: italic;
+  color: #FFF;
+  opacity: 0.6;
+  text-transform: uppercase;
 }
