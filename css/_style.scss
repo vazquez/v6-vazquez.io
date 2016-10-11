@@ -1,0 +1,56 @@
+// font-family: 'Arapey', serif;
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Abhaya Libre', serif;
+
+body {
+  background: #1E1F20;
+}
+
+.grid__flexbox {
+    display: flex;
+}
+
+.container {
+  max-width: 1020px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.bg {
+  background-image: url("../img/background.png");
+  background-size: cover;
+  height: 550px;
+}
+.header {
+  padding-top: 140px;
+}
+
+.header__image--logo {
+  padding: 0 15px 0 0;
+}
+
+.header__headline {
+  margin: 0;
+  font-family: 'Abhaya Libre', serif;
+  font-weight: 600;
+  color: #FFF;
+  font-size: 36px;
+}
+
+.header__subheadline {
+  margin-top: 10px;
+  width: 620px;
+  font-family: 'Arapey', serif;
+  font-weight: 400;
+  font-size: 26px;
+  color: white;
+}
+
+.header__subheadline--italic {
+  font-style: italic;
+}
+
+.header__subheadline--link {
+  text-decoration: none;
+  color: #D9CD3D;
+}
