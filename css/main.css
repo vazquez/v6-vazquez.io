@@ -519,6 +519,10 @@ body {
   background: #0d2d53;
 }
 
+.content__copy--italic {
+  font-style: italic;
+}
+
 .content__gallery img {
   max-width: 100%;
   margin: 25px 0;
